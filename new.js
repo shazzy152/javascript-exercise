@@ -123,5 +123,3 @@ function delBut(){
 	console.clear();
 }
 
-
-

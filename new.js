@@ -35,10 +35,11 @@ function checkInputlength(){
 function createListElement(){
 		var li = document.createElement("li");
 		var button = document.createElement('button');
+		button.setAttribute("id","delbtn" )
 		li.appendChild(document.createTextNode(input.value));
 		ul.appendChild(li);
 		li.appendChild(button);
-		button.innerHTML = "delete";
+		button.innerHTML = "Delete";
 		input.value = "";
 
 		liEvent();
@@ -121,3 +122,6 @@ function delBut(){
 	keyC = 0;
 	console.clear();
 }
+
+
+

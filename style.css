@@ -1,12 +1,125 @@
-li{
-	margin-left: 50px;
-	margin-right: 800px;
+* {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.inpu{
+    display:flex;
+    justify-content: center;
+    height: 10%;
+}
+html{
+      height: 100%;
+}
+body{
+    height:100%;
+}
+h3{
+    background-color: #ca544b;
+    color: white;
+    text-align: center;
+    padding:30px;
+}
+ul{
+    width: 100%;
+    display:grid;
+}
+ul li {
+    cursor: pointer;
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 12px 8px 12px 40px;
+    transition: 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
+ul li:hover {
+    background: #ddd;
+}
 .done {
+    background: rgb(224, 219, 219);
+    color: rgb(12, 1, 1);
 	text-decoration: line-through;
 }
-
-button {
-	margin: 8px
+.done::before{
+    content: '';
+    position: absolute;
+    border-color: rgb(3, 2, 2);
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+#delbtn {
+    display:flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 14px 16px;
+    border:none;
+}
+#delbtn:hover{
+    background-color: #f44336;
+    color: white;
+}
+.header {
+    background-color: #d36c65;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+input {
+    vertical-align: bottom;
+    border: none;
+    width: 80%;
+    padding: 0;
+    float: left;
+    font-size: 16px;
+    margin-right: 100px;
+    margin-left: 40px;
+  }
+.enterbtn {
+    border: none;
+    display:flex;
+    align-items: center;
+    background: #d9d9d9;
+    height: 30px;
+    padding: 8px;
+    margin-top: 18px;
+    color: #555;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.enterbtn:hover {
+    background-color: #bbb;
+}
+input, .enterbtn {
+    vertical-align: top;
+}
+#buttontwo{
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    background: #d9d9d9;
+    margin-right: 900px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+#buttontwo:hover{
+    background-color: #bbb;
+}
+input:focus{
+    outline:none;
 }
